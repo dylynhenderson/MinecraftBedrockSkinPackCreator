@@ -1,1 +1,16 @@
-
+{
+    "format_version": 1,
+    "header": {
+        "name": "",
+        "description": "Created with dylynhenderson's Minecraft Bedrock Skin Pack Creator!",
+        "uuid": "",
+        "version": [0, 0, 1]
+    },
+    "modules": [
+        {
+            "type": "skin_pack",
+            "uuid": "",
+            "version": [0, 0, 1]
+        }
+    ]
+}
