@@ -1,1 +1,13 @@
-
+{
+  "skins": [
+    {
+      "localization_name": "",
+      "geometry": "",
+      "texture": "",
+	    "cape": "",
+      "type": "free"
+    }
+  ],
+  "serialize_name": "",
+  "localization_name": ""
+}
