@@ -36,27 +36,14 @@ export default function SkinViewer({ skinFile, capeFile, geometry }) {
   }, [])
 
   useEffect(() => {
-  const v = viewerRef.current
-  if (!v || !ready) return
-  if (skinFile) {
-    const url = URL.createObjectURL(skinFile)
-    v.loadSkin(url, { model: geometry === 'slim' ? 'slim' : 'default' })
-      .finally(() => URL.revokeObjectURL(url))
-  } else {
-    // Render a solid gray default skin
-    const canvas = document.createElement('canvas')
-    canvas.width = 64
-    canvas.height = 64
-    const ctx = canvas.getContext('2d')
-    ctx.fillStyle = '#888888'
-    ctx.fillRect(0, 0, 64, 64)
-    canvas.toBlob(blob => {
-      const url = URL.createObjectURL(blob)
+    const v = viewerRef.current
+    if (!v || !ready) return
+    if (skinFile) {
+      const url = URL.createObjectURL(skinFile)
       v.loadSkin(url, { model: geometry === 'slim' ? 'slim' : 'default' })
         .finally(() => URL.revokeObjectURL(url))
-    })
-  }
-}, [skinFile, geometry, ready])
+    }
+  }, [skinFile, geometry, ready])
 
   useEffect(() => {
     const v = viewerRef.current
@@ -71,7 +58,6 @@ export default function SkinViewer({ skinFile, capeFile, geometry }) {
 
   return (
     <div className="viewer-area">
-      <canvas ref={canvasRef} style={{ display:'block' }} />
       <canvas ref={canvasRef} style={{ display:'block', opacity: skinFile ? 1 : 0, transition:'opacity .3s' }} />
     </div>
   )
