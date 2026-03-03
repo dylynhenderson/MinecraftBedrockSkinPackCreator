@@ -49,7 +49,7 @@ export default function App() {
     <div className="app-wrapper">
       <header className="app-header">
         <h1 className="app-title">Dylan's Minecraft Bedrock Skin Pack Creator</h1>
-        <p className="app-subtitle">No account, download, or payment required!</p>
+        <p className="app-subtitle">No account, app download, or payment required!</p>
       </header>
 
       <section className="pack-name-section" aria-labelledby="pn-label">
