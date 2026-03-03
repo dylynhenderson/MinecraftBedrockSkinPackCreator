@@ -1,0 +1,29 @@
+{
+  "name": "minecraft-bedrock-skinpack-creator",
+  "version": "1.0.0",
+  "description": "Web app to create Minecraft Bedrock Edition skin packs",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "file-saver": "^2.0.5",
+    "jszip": "^3.10.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "skinview3d": "^3.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.0",
+    "vite": "^7.3.1"
+  },
+  "keywords": [
+    "minecraft",
+    "bedrock",
+    "skinpack"
+  ],
+  "author": "dylynhenderson",
+  "license": "MIT"
+}

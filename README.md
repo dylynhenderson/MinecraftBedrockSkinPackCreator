@@ -1,2 +1,1 @@
-# MinecraftBedrockSkinPackCreator
-Create and customize Minecraft Bedrock Edition skin packs
+# Minecraft Bedrock Skin Pack Creator
