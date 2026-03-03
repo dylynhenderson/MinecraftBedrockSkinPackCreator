@@ -16,7 +16,7 @@ export async function buildAndDownload(packNameDisplay, skins) {
   if (validSkins.length === 0) throw new Error('Upload a PNG file for at least one skin slot.')
 
   const zip = new JSZip()
-  const sn = toSerializeName(packNameDisplay)
+  const sn = toSerializeName(packNameDisplay) + '_' + Math.random().toString(36).slice(2, 7)
 
   zip.file('manifest.json', JSON.stringify({
     format_version: 2,
