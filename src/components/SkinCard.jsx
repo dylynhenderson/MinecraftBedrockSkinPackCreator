@@ -82,6 +82,7 @@ export default function SkinCard({ skin, index, onChange, onRemove }) {
           inputRef={nameInputRef}
           value={skin.name}
           onChange={v => onChange({ ...skin, name: v })}
+          horizontal
         />
       </div>
     </div>

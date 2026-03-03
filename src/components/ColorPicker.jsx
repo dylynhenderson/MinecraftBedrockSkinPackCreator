@@ -44,7 +44,7 @@ function insertCode(inputRef, code, value, onChange) {
   }
 }
 
-export default function ColorPicker({ inputRef, value, onChange }) {
+export default function ColorPicker({ inputRef, value, onChange, horizontal = false }) {
   return (
     <div className="color-picker" role="toolbar" aria-label="Minecraft text formatting">
       {COLORS.map(c => (
@@ -58,7 +58,7 @@ export default function ColorPicker({ inputRef, value, onChange }) {
           aria-label={c.label}
         />
       ))}
-      <div className="color-sep" aria-hidden="true" />
+      <div className={`color-sep${horizontal ? ' color-sep--h' : ''}`} aria-hidden="true" />
       {FORMATS.map(f => (
         <button
           key={f.code}
