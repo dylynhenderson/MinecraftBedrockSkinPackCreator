@@ -1,7 +1,7 @@
 {
   "name": "minecraft-bedrock-skinpack-creator",
   "version": "1.0.0",
-  "description": "Web app to create Minecraft Bedrock Edition skin packs",
+  "description": "Create and customize Minecraft Bedrock skin packs in your browser.",
   "private": true,
   "scripts": {
     "dev": "vite",
@@ -21,6 +21,7 @@
   },
   "keywords": [
     "minecraft",
+    "custom",
     "bedrock",
     "skinpack"
   ],
