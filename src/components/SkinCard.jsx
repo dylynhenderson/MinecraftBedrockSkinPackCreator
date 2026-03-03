@@ -68,13 +68,13 @@ export default function SkinCard({ skin, index, onChange, onRemove }) {
           ref={nameInputRef}
           className="mc-input"
           type="text"
-          placeholder="Skin name..."
+          placeholder="Enter skin name..."
           value={skin.name}
           onChange={e => onChange({ ...skin, name: e.target.value })}
         />
         <div className="name-preview" aria-label="Formatted name preview">
           {segments.length === 0
-            ? <span className="name-preview-empty">preview...</span>
+            ? <span className="name-preview-empty">Preview...</span>
             : segments.map((seg, i) => <span key={i} style={segmentToStyle(seg)}>{seg.text}</span>)
           }
         </div>

@@ -66,7 +66,7 @@ export default function App() {
         />
         <div className="name-preview" aria-label="Pack name preview">
           {packSegs.length === 0
-            ? <span className="name-preview-empty">preview...</span>
+            ? <span className="name-preview-empty">Preview...</span>
             : packSegs.map((seg, i) => <span key={i} style={segmentToStyle(seg)}>{seg.text}</span>)
           }
         </div>
