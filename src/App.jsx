@@ -4,7 +4,7 @@ import ColorPicker from './components/ColorPicker'
 import { buildAndDownload } from './utils/packBuilder'
 import { parseFormatted, segmentToStyle } from './utils/formatText'
 
-const MAX_SKINS = 100
+const MAX_SKINS = 16
 
 function newSkin() {
   return { id: crypto.randomUUID(), name: '', geometry: 'normal', skinFile: null, capeFile: null }
@@ -97,7 +97,7 @@ export default function App() {
         type="button"
       >
         <span style={{ fontSize:22, fontFamily:'var(--pixel)', marginRight:4 }}>+</span>
-        Add Skin Slot {skins.length >= MAX_SKINS ? '(limit reached)' : ''}
+        Add Skin Slot {skins.length >= MAX_SKINS ? '(Limit Reached)' : ''}
       </button>
 
       <div className="generate-section">
