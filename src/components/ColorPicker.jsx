@@ -27,10 +27,6 @@ const FORMATS = [
   { code: 'r', label: 'reset', style: {},                              title: 'Reset formatting' },
 ]
 
-/**
- * Insert a §-code into the text input at the current cursor position.
- * inputRef is a React ref to the <input> element.
- */
 function insertCode(inputRef, code, value, onChange) {
   const insertion = '\u00a7' + code
   const el = inputRef?.current
