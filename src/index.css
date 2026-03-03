@@ -72,6 +72,7 @@ body {
 }
 .fmt-btn:hover { background: var(--border); border-color: var(--grass); }
 .color-sep { width: 2px; height: 26px; background: var(--border); margin: 0 3px; }
+.color-sep--h { width: 100%; height: 2px; margin: 4px 0; }
 
 .skins-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; }
 .skin-count { font-family: var(--pixel); font-size: 8px; color: var(--text-dim); }
