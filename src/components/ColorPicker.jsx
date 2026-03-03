@@ -24,7 +24,7 @@ const FORMATS = [
   { code: 'o', label: 'I', style: { fontStyle: 'italic' },             title: 'Italic' },
   { code: 'n', label: 'U', style: { textDecoration: 'underline' },     title: 'Underline' },
   { code: 'm', label: 'S', style: { textDecoration: 'line-through' },  title: 'Strikethrough' },
-  { code: 'r', label: 'reset', style: {},                              title: 'Reset formatting' },
+  { code: 'r', label: 'Reset', style: {},                              title: 'Reset formatting' },
 ]
 
 function insertCode(inputRef, code, value, onChange) {
