@@ -1,10 +1,10 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --bg: #0d0d0f; --surface: #17181f; --surface2: #21222c;
+  --bg: #1a0e08; --surface: #17181f; --surface2: #21222c;
   --border: #2c2d3a; --border-hi: #4a7c59;
   --grass: #5aad6b; --grass-dark: #3a6b48;
-  --gold: #3a6b48; --text: #dde0ec; --text-dim: #6e7088; --red: #e04040; /* Changed the gold to dirt color, I will fix the name eventually... */
+  --gold: #3a6b48; --text: #dde0ec; --text-dim: #6e7088; --red: #e04040; /* I keep changing the colors... i'll fix the names eventually... */
   --pixel: 'Press Start 2P', monospace; --vt: 'VT323', monospace;
 }
 html { scroll-behavior: smooth; }
