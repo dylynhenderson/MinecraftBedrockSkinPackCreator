@@ -22,7 +22,7 @@ Choose between **Normal (4px)** and **Slim (3px)** arm geometry per skin. This s
 Optionally upload a cape PNG for this skin. The cape will appear on the back of the 3D preview and will be bundled into the pack alongside the skin. If no cape is uploaded for a slot, the cape field is omitted from the pack entirely for that skin.
 
 > [!NOTE]
-> Capes require special implementation to appear in game.
+> Capes require special implementation to appear in-game.
 
 ### Minecraft Formatting Toolbar
 
@@ -38,30 +38,30 @@ Both the pack name and each skin name have a formatting toolbar containing:
 > [!IMPORTANT]
 > These are Minecraft's native formatting codes. Position your cursor before the text you want to format, then click a button to insert the code.
 
-Clicking a button inserts the appropriate `§` code at the cursor position in the text field. The live preview renders the result immediately so you always see the in-game output before downloading.
+Clicking a button inserts the appropriate `§` code at the cursor position in the text field. The live preview renders the result immediately, so you always see the in-game output before downloading.
 
 > [!CAUTION]
 > This tool does not save your work between sessions.
 
 ---
 
-## How to use your Skinpack
+## How to use your Skin Pack
 
 ### Build & Download
 Click **Build & Download .mcpack** to generate the skin pack. The tool assembles all uploaded textures and metadata entirely in the browser — no data is sent to any server. The output is a valid `.mcpack` file that Minecraft Bedrock Edition can import directly.
 
 > [!WARNING]
-> Create a unique name for each skinpack you create, or Minecraft may have problems.
+> Create a unique name for each skin pack you create, or Minecraft may have problems.
 
 The generated pack includes:
 - `manifest.json` with randomly generated UUIDs and version metadata
 - `skins.json` with all skin entries, geometry references, textures, and optional cape fields
-- `texts/en_US.lang` with the pack name and each skin's display name including all formatting codes
+- `texts/en_US.lang` with the pack name and each skin's display name, including all formatting codes
 - All uploaded skin and cape PNG files
 
 ### How to Import
 
-**Windows:** Double-click the `.mcpack` file. Minecraft will open and import it automatically.
+**Windows:** Double-click the `.mcpack` file. Minecraft will open and automatically import it.
 
 **Android:** Open the `.mcpack` file with the Minecraft app from your file manager.
 
@@ -74,7 +74,7 @@ The generated pack includes:
 
 ## To be Implemented
 
-- [ ] Larger skinpack size
+- [ ] Larger skin pack size
 - [ ] Restrictions on uploaded files
 - [ ] Local saving of skins and packs
 - [ ] Adding Minecraft's native emojis to formatting toolbar
